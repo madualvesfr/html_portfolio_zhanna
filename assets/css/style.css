@@ -492,6 +492,33 @@ body::before {
   vertical-align: middle;
 }
 
+/* NOW SECTION */
+.now-date {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  margin-bottom: 20px;
+}
+.now-list { margin: 0 0 24px; }
+.now-list li {
+  padding: 12px 0 12px 0;
+  border-bottom: 1px dotted var(--ink-muted);
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 16px;
+  align-items: baseline;
+}
+.now-list li::before { display: none; }
+.now-label {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
 /* BUTTONS */
 .btn {
   display: inline-flex;
@@ -571,4 +598,5 @@ body::before {
   .movie-item { text-align: center; }
   .movie-item::before { display: none; }
   .page .lede::first-letter { font-size: 4rem; }
+  .now-list li { grid-template-columns: 1fr; gap: 4px; }
 }

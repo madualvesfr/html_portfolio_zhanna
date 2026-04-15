@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(gh repo *)",
+      "Bash(git remote *)",
+      "Bash(gh auth *)",
+      "mcp__claude_ai_Vercel__deploy_to_vercel",
+      "Bash(rsvg-convert --version)",
+      "Bash(brew list *)"
+    ]
+  }
+}
