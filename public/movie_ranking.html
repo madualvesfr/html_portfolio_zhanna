@@ -1,35 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <title>Movie Ranking</title>
-    <h1>
-        The Best Movies According to Zhanna
-    </h1>
-    <h2>
-        My TOP 3 movies of all-time
-    </h2>
-    <hr />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Best Movies — Zhanna Bielash</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-
 <body>
-    <h3> 
-        <u>Hacksaw Ridge (2016)</u>
-    </h3>
-<img src="../assets/images/Hacksaw Ridge (2016).jpg" width="100" height="150">
-<p>An interesting film about war, but with a deeper meaning, namely about freedom and faith.</p>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-brand">Zhanna Bielash</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">Index</a></li>
+        <li><a href="./about.html">About</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+        <li><button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">◐</button></li>
+      </ul>
+    </div>
+  </nav>
 
-    <h3> 
-        <u> Notebook (2004)</u>
-    </h3>
-<img src="../assets/images/The Notebook (2004).jpg" width="100" height="150">
-<p>A dramatic film about love until death.</p>
+  <main class="container">
+    <article class="page reveal">
+      <span class="page-kicker">Essay · 01 · On Cinema</span>
+      <h1>The best movies, according to me.</h1>
+      <p class="page-deck">Three films. Not necessarily the "greatest" — just the ones that stayed. The ones I keep returning to, the way one returns to an old letter.</p>
 
-    <h3>
-        <u>Attack on Titan (2013-2023)</u>
-    </h3>
-<img src="../assets/images/Attack on Titan (2013-2023).jpg" width="100" height="150">
-<p>The best anime reveals the essence of people and their nature.</p>
-<hr />
-<a href="../index.html">Back</a>
+      <div class="movie-item">
+        <img class="poster" src="../assets/images/Hacksaw Ridge (2016).jpg" alt="Hacksaw Ridge poster">
+        <h3>Hacksaw Ridge <em>2016</em></h3>
+        <p>Ostensibly a war film — but really a film about freedom and faith, and the quiet courage of holding a line no one asked you to hold.</p>
+      </div>
+
+      <div class="movie-item">
+        <img class="poster" src="../assets/images/The Notebook (2004).jpg" alt="The Notebook poster">
+        <h3>The Notebook <em>2004</em></h3>
+        <p>A love story that refuses to let go — tender, stubborn, and honest about what it means to remember someone until the very end.</p>
+      </div>
+
+      <div class="movie-item">
+        <img class="poster" src="../assets/images/Attack on Titan (2013-2023).jpg" alt="Attack on Titan poster">
+        <h3>Attack on Titan <em>2013–2023</em></h3>
+        <p>The best anime I know. Beneath the spectacle, a study of human nature — of how ordinary people become something else entirely when the walls come down.</p>
+      </div>
+
+      <hr>
+      <a href="../index.html" class="btn btn-ghost">← Return to Index</a>
+    </article>
+  </main>
+
+  <footer class="footer">© 2026 · Zhanna Bielash · Made with <span class="heart">♥</span> in Kyiv</footer>
+  <script src="../assets/js/main.js"></script>
+</body>
 </html>

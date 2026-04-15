@@ -1,21 +1,72 @@
 <!DOCTYPE html>
- <html lang="uk">
- <head>
-    <meta charset="UTF-8">
-    <title>My HTML Portfolio</title>
- </head>
- <body>
-    <h1>Zhanna Bielash's Portfolio</h1>
-    <h2>I'm a Web Developer</h2>
-<hr />
-    <h2><a href="./public/movie_ranking.html">Movie Ranking Project</a></h2><br/>
-    <img src="./assets/images/movie_ranking.png" height="200" alt="movie ranking project preview"><br/>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zhanna Bielash — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Zhanna Bielash, web developer from Ukraine.">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="./index.html" class="nav-brand">Zhanna Bielash</a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Index</a></li>
+        <li><a href="./public/about.html">About</a></li>
+        <li><a href="./public/contact.html">Contact</a></li>
+        <li><button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle theme">◐</button></li>
+      </ul>
+    </div>
+  </nav>
 
-    <h2><a href="./public/birthday_invite.html">Birthday Invite Project</a></h2><br/>
-    <img src="./assets/images/birthday_invite.png" height="200" alt="birthday invite project preview"><br/>
-<hr />
+  <main class="container">
+    <header class="hero reveal">
+      <span class="eyebrow">Volume I · Netishyn, 2026</span>
+      <h1>Notes on a life lived <em>awake</em>.</h1>
+      <h2>Zhanna Bielash — a web developer, dancer, and quiet reader of people. This is her small, honest corner of the internet.</h2>
+      <div class="hero-meta">
+        <span>Kyiv · Ukraine</span>
+        <span>Est. 2024</span>
+        <span>Personal journal</span>
+      </div>
+    </header>
 
-    <a href="./public/about.html">About Me</a>
-    <a href="./public/contact.html">Contact Me</a>
- </body>
- </html>
+    <section class="section">
+      <h2 class="section-title" data-num="Two entries">Selected Works</h2>
+      <div class="grid">
+        <a class="card reveal" href="./public/movie_ranking.html">
+          <div class="card-media">
+            <img src="./assets/images/movie_ranking.png" alt="Movie ranking project preview">
+          </div>
+          <div class="card-kicker">Essay · 01</div>
+          <div class="card-title">The Best Movies, According to Me</div>
+          <div class="card-desc">Three films — and the reasons they stay with me long after the credits.</div>
+          <span class="card-read">Read →</span>
+        </a>
+
+        <a class="card reveal" href="./public/birthday_invite.html">
+          <div class="card-media">
+            <img src="./assets/images/birthday_invite.png" alt="Birthday invite project preview">
+          </div>
+          <div class="card-kicker">Invitation · 02</div>
+          <div class="card-title">A Small Gathering in August</div>
+          <div class="card-desc">An invitation — balloons, cake, and the people I love. Bring an appetite.</div>
+          <span class="card-read">Read →</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="cta-center reveal">
+      <a href="./public/about.html" class="btn">About the Author →</a>
+      <a href="./public/contact.html" class="btn btn-ghost">Correspondence</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 · Zhanna Bielash · Made with <span class="heart">♥</span> in Kyiv
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
